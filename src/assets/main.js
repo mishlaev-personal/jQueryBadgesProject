@@ -12,7 +12,7 @@ $(function() {
         .addClass('course')
         .append('<h3>' + arrayElement.title + '</h3>')
         .append($('<img>', {src:arrayElement.badge, title:arrayElement.title}))
-        .append($('<a href=' + arrayElement.url + 'target=_blank class="btn btn-primary">See sourse</a>'));
+        .append($('<a href="' + arrayElement.url + '" target=_blank class="btn btn-primary">See sourse</a>'));
         elements.push(element);
       };
       $('#badges').append(elements);
