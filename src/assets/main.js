@@ -10,8 +10,9 @@ $(function() {
 
       for (x = 0; x < response.courses.completed.length; x++) {
         var arrayElement = response.courses.completed[x];
-        var element = $('<div>' + '</div>')
-        .addClass('course')
+        var element = $('<div>', {
+          class: "course"
+        })
         .append($('<h3>', {
           text: arrayElement.title
         }))
